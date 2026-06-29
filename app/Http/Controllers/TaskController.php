@@ -66,6 +66,7 @@ class TaskController extends Controller
         $task->is_completed = $request->has('is_completed');
         $task->save();
         return redirect('/tasks');
+        
     }
 
     /**
